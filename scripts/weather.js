@@ -223,6 +223,7 @@
     $('#output-temp').html(data.current.temp.toFixed(0) + '&deg;');
     $('#output-feelsLike').html(data.current.feels_like.toFixed(0) + '&deg;');
     $('#output-wind-speed').html(data.current.wind_speed.toFixed(0) + " mph");
+    $('#output-wind-direction').html(data.current.wind_deg + '&deg;');
     $('#output-cloudiness').html(data.current.clouds + "&#37;");
     $('#output-uv').html(data.current.uvi.toFixed(0));
     $('#output-humidity').html(data.current.humidity + "&#37;");
