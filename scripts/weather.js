@@ -24,12 +24,6 @@
     $('#icon').hide();
     $('#output-description').hide();
 
-    // About this app card slide toggle.
-    $('#aboutApp').hide();
-    $('#aboutBtn').click(function(event) {
-      $('#aboutApp').slideToggle();
-    });
-
     // Force focus on to the zip code input.
     $('#zip-code').focus();
 
@@ -165,7 +159,7 @@
   *   Output:  NONE.
   */
   function getWeather(lat, lon) {
-    let url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely&units=imperial&appid=<<TOKEN>>`;
+    let url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely&units=imperial&appid=464d302e2871d55aec231e19fb9078f7`;
 
       // Make a GET request to the weather API.
       $.getJSON(url, function(data) {
